@@ -1,0 +1,10 @@
+
+Chris Fortier
+cs50 - Final Project
+Design Document
+
+I created this project to create a transit routing application. The site is hosted on two Amazon EC2 servers, one as a web server and the other as a database server. The site is located at http://54.235.245.148/web_server/html/main.php. PHP is the primary programming language used, though there is code in Python and javascript also.
+
+Servers:
+
+

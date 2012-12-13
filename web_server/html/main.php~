@@ -1,0 +1,46 @@
+<?php
+
+    // configuration
+    require("../includes/functions.php");
+
+    //get stops
+    $stops = getStops('nj_transit');  
+    
+     // if form was submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+    	//dump($_POST);
+    	
+    	//extract variables
+    	$origin = intval($_POST["origin"]);
+    	$destination = intval($_POST["destination"]);
+    	$hour = $_POST["select-choice-hour"];
+    	$min = $_POST["select-choice-min"];
+    	
+    	//format time
+    	$time = '"' . $hour . ":" . $min . ":" . "00" . '"';
+    	//dump($time);
+    	
+    	$null = -1;
+    	    	
+    	$route = astar($db, $origin, $destination, $time, $null );
+    	//$route = test($db);
+    	dump($route);
+
+		if (($route != NULL))
+		{	
+    		//render route
+    		render("main_route.php", ["route" => $route]);
+		}
+		else
+		{
+			//render error
+			render("main_error.php", ["route" => $route]);
+		}
+    }
+    else
+    {
+    	//render main
+    	render("main_form.php", ["stops" => $stops]);
+	}
+?>

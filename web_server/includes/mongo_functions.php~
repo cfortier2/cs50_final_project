@@ -1,0 +1,38 @@
+<?php
+
+    /***********************************************************************
+     * mongo_functions.php
+     *
+     * Chris Fortier
+     * Computer Science 50
+     * Final Project
+     *
+     * mongo db functions
+     **********************************************************************/
+     
+     
+    /**
+     * Get all stops matching an agency_key
+     */
+    function getStops($agency)
+    {
+        //connect to DB
+	    $m = new Mongo("ec2-50-17-59-106.compute-1.amazonaws.com");
+        
+	    //select a database
+	    $db = $m->transit;
+        
+	    //select a collection
+	    $collection = $db->stops;
+	        
+	    //get all stops for agency
+	    //$cursor = $collection->find(array(agency_key=>$agency), array(stop_name=> 1))->sort(array(stop_name=>1));
+        
+        $cursor = $collection->find(array(agency_key=>$agency))->sort(array(stop_name => 1));
+        
+
+
+        return $cursor;    
+    }
+     
+?>

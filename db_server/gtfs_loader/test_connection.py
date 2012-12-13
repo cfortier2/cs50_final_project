@@ -1,0 +1,18 @@
+
+import pymongo
+from pymongo import MongoClient
+
+#make connection
+con = MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017)
+
+#connect to database
+db = con.test
+
+#collection
+collection = db.places
+
+#debug
+for i in collection.find():
+    print i
+
+

@@ -1,0 +1,443 @@
+<?php
+    /*
+     * route.php
+     *
+     * Chris Fortier cs50 - Final Project
+     *
+     * This is the core routing program for the project. It requires transit_node.php, which defines a node of relevent data for a train stop and implements a linked list of those stops.
+     *
+     * process:
+     *      Conceptually speaking, this implementation views an individual train trip as a singly linked list of transit_nodes (stops). To determine an optimal route, we start with the next train leaving a given stop. The data from that trip is then used to construct the linked list (transit_list). 
+     *
+     * functions:
+     *
+     * nextTrains:
+     *      queries the database for the next $num of trains departing from a given $stop_id 
+     *
+     * nextTrip:
+     *      queries the database for the details of a given $trip_id for stops after the given $stop_sequence
+     *
+     * getStop:
+     *      queries the database for details of a given $stop_id
+     *
+     * test:
+     *      constructs a single list with hard-coded data for testing. 
+     */
+
+
+    require_once("transit_node.php");
+
+    $localTest = False;
+
+	//connect to DB
+	if ($localTest)
+    {
+        print("localTest\n");
+        $m = new Mongo();
+        
+        //select a database
+        $db = $m->test;
+    }
+    else
+    {
+        $m = new Mongo("ec2-50-17-59-106.compute-1.amazonaws.com");
+        
+        //select a database
+        $db = $m->transit;
+    }
+
+	//test routes
+	
+	//on same route
+	//astar($db, 63, 29, "07:34:00");
+	
+	//transfer routes - hoboken to newark penn
+	$output = astar($db, 63, 107, "07:34:00");
+	print_debug($output);
+
+	//sec to  newark penn
+	//astar($db, 38174, 107, "07:45:00");
+
+	//-- core routing function -----------------------//
+	function astar($db, $origin, $destination, $time)
+	{
+			print("\nastar: $origin, $destination, $time");
+
+			//create trips to check		
+			$trips[] = createTrips($db, $origin, $destination, $time);
+			//print_r($trips);
+
+			//flag if destination is found
+			$destinationFound = FALSE;
+			
+			//create open and closed lists
+			//$open_list[];
+			//$closed_list[];
+
+			//add each trip to the open list
+			foreach($trips as $trip)
+			{
+					foreach($trip as $t)
+					{
+						//add to open list
+						$open_list[] = $t;
+
+						//check if destination is in list
+						if ($t->getDestinationFound() == 1)
+						{	
+							//set destinationFound flag
+							$destinationFound = TRUE;
+
+							//create list of routes
+							$foundRoutes[] = $t;
+
+							//print_r($t);
+						}
+					}
+			}	
+
+			//read open_list
+			foreach($open_list as $list)
+			{
+				//print_r($list);
+				$current = $list->getHead();
+				$next = $list->getSecondStop();
+				//print("\n$current->stop_name: trip_id: $current->trip_id fCost: $current->fCost\n");
+				//print("\t\\$next->stop_name: fCost: $next->fCost\n");
+			}
+
+			//print("\nBEFORE:\n");
+			//print_r($open_list);
+			
+			//sort the open_list
+			usort($open_list, "myCmp");
+
+			//print("\nAFTER:\n");
+			//print_r($open_list);
+			
+			print("\n\n***--------starting new open list --------***\n\n");
+
+			//while openset is not null
+			while($open_list != NULL  && $destinationFound == FALSE)
+			{
+					//now that we have our open_list sorted by fCost, pull the lowest cost trip
+					$cheapest_trip = array_pop($open_list);
+					print("\ncheapest_trip: ");
+					print_r($cheapest_trip->getHead()->stop_name . " fCost: " . $cheapest_trip->getHead()->fCost);					
+
+					//if destination is in list, return the path
+					if ($cheapest_trip->getDestinationFound() == 1)
+					{
+						$destinationFound = TRUE;
+
+						print("\nFOUND IT");
+						print_r($cheapest_trip->getHead());
+						return "HOWDY";
+					}
+					else
+					{
+							print("\n\t\\");
+							print_r($cheapest_trip->getSecondStop()->stop_name);
+							print(" fCost: " . $cheapest_trip->getSecondStop()->fCost);
+
+							//track current fCost
+							$current_fCost = $cheapest_trip->getHead()->fCost;
+							print("\ncurrent_fCost: " . $current_fCost . "\n");
+
+							//recursively check each trip on list
+							$cursor = $cheapest_trip->getSecondStop();
+							while (($cursor != NULL) && ($cursor->fCost < $current_fCost))
+							{
+								//check fCost
+								if ($cursor->fCost > 0)
+								{
+										//print("\nin_cursor\n");
+										//print($cursor->stop_name . " fcost: " . $cursor->fCost);
+										//print_r($cursor);
+										
+										//update current_fCost
+										if ($cursor->fCost < $current_fCost)
+												$current_fCost = $cursor->fCost;
+
+										//recursive call
+										return astar($db, $cursor->stop_id, $destination, $cursor->arrival_time );
+								}
+
+								//move cursor down list
+								$cursor = $cursor->nextNode;
+							}
+
+					}
+			}
+
+			print("\nopen_list is null\n");
+			return $foundRoutes;
+	}
+
+	//try and sort the open_list
+	// ****NOTE LIST IS SORTED IN REVERSE ORDER SO THAT WE CAN POP THE LOWEST COST FROM THE ARRAY ***
+	function myCmp($a, $b)
+	{
+		return ($a->getSecondStop()->fCost > $b->getSecondStop()->fCost) ? -1 :1;
+	}	
+
+
+	//-- this function creates N number of available trips from an origin at a given time. It removes trips that are the last stop.
+	function createTrips($db, $origin, $destination, $time)
+	{
+			//load next $num trains from origin in to queue
+			$num = 25;
+			$nextTrains = nextTrains($db, $origin, $time, $num);
+			//print_debug($nextTrains);
+
+			//array of linked lists of next available trips. 
+			$tripList = [];
+			$i = 0;
+
+			//create linked list for each of the next available trains
+			foreach($nextTrains as $train)
+			{
+				//print_r($train);
+				
+				//create a linked list of the remainder of the route for the next train
+				$tripList[$i] = new transit_list();
+				
+				//get details of next available trip
+				$nextTrips = nextTrip($db, $train['trip_id'], $train['stop_sequence']);
+				//print_debug($nextTrips);
+
+				//add node/stop to list
+				foreach($nextTrips as $trip)
+				{
+					//print_r($nextTrips);
+
+					//get stop name
+					$stop = getStop($db, $trip['stop_id']);
+					$name = "";
+					foreach($stop as $s)
+					{
+						//print($s['stop_name']);
+						$name = $s['stop_name'];
+					}
+
+					//get block_id (this is the public train number)
+					$trips_info = getTrip($db, $trip['trip_id']);
+					$block_id = "";
+					foreach($trips_info as $info)
+					{
+						$block_id = $info['block_id'];
+					}
+
+					//get distance
+					$dist = getDistance($db, $trip['stop_id'], $destination);
+
+					//create node
+					$node = new transit_node($name, $trip['stop_id'], $trip['trip_id'], $block_id, $trip['arrival_time'], $trip['departure_time'], $dist, $time);
+
+					//add to tripList
+					$tripList[$i]->append($node);
+				}
+
+				//increment counter
+				$i++;
+			}
+			
+			//remove lists with only one node (meaning it is the last stop)
+			//print("\ntripList - before:\n");
+			//print_r($tripList);
+			foreach($tripList as $key => $trip)
+			{
+				//print("\nnodeCount: " . $trip->getNodeCount() ."\n");
+				if ($trip->getNodeCount() == 1)
+				{
+					unset($tripList[$key]);
+				}
+			}
+			//print("\ntripList - after:\n");
+			//print_r($tripList);
+			
+			//check each of the tripLists to see if the destination is found.
+			foreach($tripList as $trip)
+			{
+					//print_r($trip);
+					//check if destination is in this list
+					if ($trip->inList('stop_id', $destination))
+					{
+						//remove remaining stops from list
+						$trip->remove_after($destination);
+
+						//print list
+						//print("\nRoute found:\n");
+						//print_r($trip);
+					}
+
+					//look at next stop
+					//print("\nNext Stop:\n");
+					$cursor = $trip->getSecondStop();
+					//print_r($cursor);
+			}
+
+
+		//print the lists
+		/*
+		foreach($tripList as $trip)
+			$trip->printList();
+		*/
+		
+			return $tripList;
+	}
+
+
+	//--helper functions-------------------------------------------------------------------------------------------------//
+
+	//function takes the data to  query the next trains, gets the lon/lat and calls the next function. The location function was added as an after thought.
+	function nextTrains($db, $stop_id, $time, $num)
+	{
+		//get lon/lat
+		$stop = getStop($db, $stop_id);
+		$stop_lon = "";
+		$stop_lat = "";
+		foreach($stop as $s)
+		{
+			//print_r($s['loc']);
+			$stop_lon = $s['stop_lon'];
+			$stop_lat = $s['stop_lat'];
+		}
+		
+		//print($stop_lon . ", " .  $stop_lat);	
+		return nextTrains_loc($db, $stop_lon, $stop_lat, $time, $num);
+	}
+
+	//function takes a lon/lat and returns the next $num trains
+	//nextTrains_loc($db, -74.075821, 40.761188, "07:45:00", 5);
+	function nextTrains_loc($db, $stop_lon, $stop_lat, $time, $num)
+	{
+		//get stops within .15 miles
+		$loc_cursor = $db->command(['geoNear' => 'stops',
+					'near'	=> [$stop_lon, $stop_lat],
+					'spherical' => true,
+					'distanceMultiplier' => 3959,
+					'maxDistance' => .00009 ,
+					'num' => $num	]);
+		//print_r($cursor);
+
+		//pull out only the stop id's
+		foreach($loc_cursor as $loc)
+		{
+				if (is_array($loc))
+				{
+						foreach($loc as $l)
+						{
+							//print_r($l['obj']['stop_id']);
+							if ($l['obj']['stop_id'] != NULL)	
+								$stops[] = $l['obj']['stop_id'];
+						}
+				}
+		}
+		//print_r($stops);
+
+		//get next $num of trains leaving after $time from location
+		$query = array("stop_id" => array('$in' => $stops), "departure_time" => array('$gt' => $time));
+        $cursor = $db->stop_times->find( $query )->sort(array("departure_time" => 1))->limit($num);
+        
+		//print("\nnextTrains\n");
+		//print_debug($cursor);
+		
+		return ($cursor);
+	}
+
+
+	//function takes a trip id and returns an array of the remaining stops
+	function nextTrip($database, $trip_id, $stop_seq)
+	{
+		//gets the trip
+		$query = array("trip_id" => $trip_id, "stop_sequence" => array('$gte' => $stop_seq));
+		$cursor = $database->stop_times->find( $query )->sort(array("stop_sequence" => 1));
+
+		//print_debug($cursor);
+		//print_r($cursor);
+		
+		return ($cursor);
+	}
+
+	//get name of a stop
+	function getStop($db, $stop_id)
+	{
+		//get the stop info
+		$query = array("stop_id" => $stop_id);
+		$cursor = $db->stops->find( $query );
+		
+		//print_debug($cursor);
+		return ($cursor);
+	}
+
+	//get trip info
+	function getTrip($db, $trip_id)
+	{
+		//get the trip info
+		$query = array("trip_id" => $trip_id);
+		$cursor = $db->trips->find( $query );
+		
+		//print_debug($cursor);
+		return ($cursor);
+	}
+	
+	//helper to print variables
+	function print_debug($var)
+    	{
+		//display if null
+		if ($var == NULL)
+		print("$var is NULL");
+
+		//iterate through results and display
+		foreach($var as $obj) {
+			print_r($obj);;
+		}
+	}
+
+	//get distance between two stops
+	function getDistance($db, $start_id, $end_id)
+	{
+		//get start
+		$start = getStop($db, $start_id);
+		$start_loc = "";
+		foreach($start as $s)
+		{
+			//print_r($s['loc']);
+			$start_loc = $s['loc'];
+		}
+		
+		//get end
+		$end = getStop($db, $end_id);
+		$end_loc = "";
+		foreach($end as $e)
+		{
+			//print_r($e['loc']);
+			$end_loc = $e['loc'];
+		}
+
+		//get data
+		$cursor = $db->command(['geoNear' => 'stops',
+					'near'	=> [$start_loc[0], $start_loc[1]],
+					'spherical' => true,
+					'distanceMultiplier' => 3959,
+					'query' => ['stop_id' => $end_id ]	]);
+
+		//hard coded test
+		/*
+		$cursor = $db->command(['geoNear' => 'stops',
+					'near'	=> [-74.075821, 40.761188],
+					'spherical' => true,
+					'distanceMultiplier' => 3959,
+					'query' => ['stop_name' => "HOBOKEN" ]	]);
+		 */
+
+		//print_r($cursor);
+
+		//print_r($cursor['results'][0]['dis']);
+		
+		//return the distance
+		$distance = $cursor['results'][0]['dis'];
+		return $distance;
+	}
+?> 

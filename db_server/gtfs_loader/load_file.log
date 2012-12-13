@@ -1,0 +1,263 @@
+2012-11-28 03:41:42,019 Starting nj_transit
+2012-11-28 03:41:59,258 Starting nj_transit
+2012-11-28 03:42:35,230 Starting nj_transit
+2012-11-28 03:42:35,230 nj_transit: 0 elements in 0.000353813171387 seconds. 0.0 elements per second.
+2012-11-28 03:42:35,230 nj_transit complete.
+2012-11-28 03:46:56,118 Starting nj_transit
+2012-11-28 03:47:23,544 Starting nj_transit
+2012-11-28 03:47:52,821 Starting nj_transit
+2012-11-28 03:51:58,454 Starting nj_transit
+2012-11-28 03:55:30,944 Starting nj_transit
+2012-11-28 03:55:30,944 nj_transit: 0 elements in 0.000459909439087 seconds. 0.0 elements per second.
+2012-11-28 03:55:30,944 nj_transit complete.
+2012-11-28 04:10:50,246 Starting nj_transit
+2012-11-28 04:10:50,273 nj_transit: 0 elements in 0.026782989502 seconds. 0.0 elements per second.
+2012-11-28 04:10:50,273 nj_transit complete.
+2012-11-28 04:15:42,303 Starting nj_transit
+2012-11-28 04:15:42,313 nj_transit: 0 elements in 0.0103759765625 seconds. 0.0 elements per second.
+2012-11-28 04:15:42,313 nj_transit complete.
+2012-11-28 04:31:14,546 Starting nj_transit
+2012-11-28 04:33:33,912 Starting nj_transit
+2012-11-28 04:33:33,921 nj_transit: 0 elements in 0.00855398178101 seconds. 0.0 elements per second.
+2012-11-28 04:33:33,921 nj_transit complete.
+2012-11-28 04:36:51,589 Starting nj_transit
+2012-11-28 04:46:24,581 Starting nj_test
+2012-11-28 04:47:03,579 Starting 
+2012-11-28 04:47:19,849 Starting nj_test
+2012-11-28 04:47:19,876 nj_test: 0 elements in 0.0266590118408 seconds. 0.0 elements per second.
+2012-11-28 04:47:19,888 nj_test complete.
+2012-11-28 04:48:08,212 Starting nj_test
+2012-11-28 04:48:36,578 Starting nj_test
+2012-11-28 04:48:36,588 nj_test: 0 elements in 0.00937795639038 seconds. 0.0 elements per second.
+2012-11-28 04:48:36,601 nj_test complete.
+2012-11-28 04:52:37,819 Starting nj_test
+2012-11-28 04:52:37,829 nj_test: 0 elements in 0.0100028514862 seconds. 0.0 elements per second.
+2012-11-28 04:52:37,830 nj_test complete.
+2012-11-28 04:54:10,925 Starting nj_test
+2012-11-28 04:54:10,929 nj_test: 0 elements in 0.00395679473877 seconds. 0.0 elements per second.
+2012-11-28 04:54:10,929 nj_test complete.
+2012-11-28 05:03:42,552 Starting nj_test
+2012-11-28 05:03:42,576 nj_test: 0 elements in 0.0235960483551 seconds. 0.0 elements per second.
+2012-11-28 05:03:42,577 nj_test complete.
+2012-11-28 05:04:52,007 Starting nj_test
+2012-11-28 05:05:13,024 Starting nj_test
+2012-11-28 05:05:45,920 Starting nj_test
+2012-11-28 05:06:03,111 Starting nj_test
+2012-11-28 05:06:22,730 Starting nj_test
+2012-11-28 05:06:22,741 nj_test: 0 elements in 0.0112979412079 seconds. 0.0 elements per second.
+2012-11-28 05:06:22,742 nj_test complete.
+2012-11-28 05:06:45,733 Starting nj_test
+2012-11-28 05:06:45,745 nj_test: 0 elements in 0.0111701488495 seconds. 0.0 elements per second.
+2012-11-28 05:06:45,752 nj_test complete.
+2012-11-28 05:10:30,264 Starting nj_test
+2012-11-28 05:10:30,277 nj_test: 0 elements in 0.0123438835144 seconds. 0.0 elements per second.
+2012-11-28 05:10:30,281 nj_test complete.
+2012-11-28 05:11:09,527 Starting nj_test
+2012-11-28 05:11:09,540 nj_test: 0 elements in 0.0132398605347 seconds. 0.0 elements per second.
+2012-11-28 05:11:09,547 nj_test complete.
+2012-11-28 05:11:24,818 Starting nj_test
+2012-11-28 05:11:24,832 nj_test: 0 elements in 0.0134019851685 seconds. 0.0 elements per second.
+2012-11-28 05:11:24,837 nj_test complete.
+2012-11-28 05:14:12,726 Starting nj_test
+2012-11-28 05:14:12,741 nj_test: 0 elements in 0.0150067806244 seconds. 0.0 elements per second.
+2012-11-28 05:14:12,751 nj_test complete.
+2012-11-28 05:15:51,420 Starting nj_test
+2012-11-28 05:16:43,635 Starting nj_test
+2012-11-28 05:17:35,643 Starting nj_test
+2012-11-28 05:17:38,346 nj_test: 0 elements in 2.70319795609 seconds. 0.0 elements per second.
+2012-11-28 05:17:38,351 nj_test complete.
+2012-11-28 05:21:04,804 Starting nj_test
+2012-11-28 05:21:04,868 nj_test: 5 elements in 0.0641891956329 seconds. 77.8947290225 elements per second.
+2012-11-28 05:21:04,869 nj_test complete.
+2012-11-28 05:21:14,997 Starting nj_transit
+2012-11-28 05:52:46,759 nj_transit: 719441 elements in 1891.76210403 seconds. 380.302046682 elements per second.
+2012-11-28 05:52:46,860 nj_transit complete.
+2012-11-28 05:59:28,965 Starting nj_test
+2012-11-28 05:59:28,989 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 05:59:29,996 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 05:59:30,021 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 05:59:30,078 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 05:59:30,098 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 05:59:30,155 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 05:59:30,215 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 05:59:30,339 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 05:59:47,242 nj_test: 5 elements in 18.2767012119 seconds. 0.273572344485 elements per second.
+2012-11-28 05:59:47,247 nj_test complete.
+2012-11-28 06:00:28,299 Starting nj_test
+2012-11-28 06:00:28,307 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:00:28,312 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:00:28,320 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:00:28,330 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:00:28,332 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:00:28,337 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:00:28,340 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:00:28,344 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:00:28,347 nj_test: 5 elements in 0.0484330654144 seconds. 103.235257922 elements per second.
+2012-11-28 06:00:28,348 nj_test complete.
+2012-11-28 06:01:36,765 Starting nj_test
+2012-11-28 06:01:36,774 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:01:36,786 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:01:36,790 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:01:36,799 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:01:36,802 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:01:36,809 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:01:36,819 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:01:36,824 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:01:36,831 nj_test: 5 elements in 0.0652289390564 seconds. 76.6530940458 elements per second.
+2012-11-28 06:01:36,832 nj_test complete.
+2012-11-28 06:02:48,990 Starting nj_test
+2012-11-28 06:02:48,994 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:02:49,002 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:02:49,006 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:02:49,015 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:02:49,018 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:02:49,022 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:02:49,025 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:02:49,031 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:02:49,035 nj_test: 5 elements in 0.0450849533081 seconds. 110.901745108 elements per second.
+2012-11-28 06:02:49,037 nj_test complete.
+2012-11-28 06:04:14,905 Starting nj_test
+2012-11-28 06:04:14,914 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:04:14,925 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:04:14,928 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:04:14,937 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:04:14,940 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:04:14,943 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:04:14,946 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:04:14,950 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:04:14,959 nj_test: 5 elements in 0.0544900894165 seconds. 91.7598053801 elements per second.
+2012-11-28 06:04:14,960 nj_test complete.
+2012-11-28 06:04:56,477 Starting nj_test
+2012-11-28 06:04:56,485 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:04:56,489 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:04:56,498 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:04:56,510 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:04:56,512 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:04:56,517 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:04:56,521 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:04:56,525 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:04:56,528 nj_test: 47 elements in 0.0512828826904 seconds. 97.4984193104 elements per second.
+2012-11-28 06:04:56,533 nj_test complete.
+2012-11-28 06:05:21,383 Starting nj_test
+2012-11-28 06:05:21,395 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:05:21,404 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:05:21,407 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:05:21,420 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:05:21,425 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:05:21,435 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:05:21,442 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:05:21,447 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:05:21,453 nj_test: 47 elements in 0.0703399181366 seconds. 71.0833923675 elements per second.
+2012-11-28 06:05:21,457 nj_test complete.
+2012-11-28 06:05:55,652 Starting nj_transit
+2012-11-28 06:05:55,671 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-28 06:08:15,156 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-28 06:08:15,180 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-28 06:08:15,203 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-28 06:08:15,218 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-28 06:08:15,357 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-28 06:08:16,218 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-28 06:08:18,348 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-28 06:43:37,124 nj_transit: 787094 elements in 2261.47209978 seconds. 318.129505144 elements per second.
+2012-11-28 06:43:37,129 nj_transit complete.
+2012-11-29 03:08:17,654 Starting nj_test
+2012-11-29 05:02:13,677 Starting nj_transit
+2012-11-29 05:02:13,779 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stop_times')
+2012-11-29 05:02:55,132 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'agency')
+2012-11-29 05:02:55,180 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'routes')
+2012-11-29 05:02:55,290 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'test_trips')
+2012-11-29 05:02:55,339 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stops')
+2012-11-29 05:02:56,444 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'calendar_dates')
+2012-11-29 05:03:05,664 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'trips')
+2012-11-29 05:03:27,357 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'shapes')
+2012-11-29 05:29:26,348 nj_transit: 787094 elements in 1632.67107201 seconds. 440.652751393 elements per second.
+2012-11-29 05:29:26,349 nj_transit complete.
+2012-11-30 16:18:37,281 Starting nj_transit
+2012-11-30 16:18:37,300 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stop_times')
+2012-11-30 16:20:58,037 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'agency')
+2012-11-30 16:20:58,162 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'routes')
+2012-11-30 16:20:58,217 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'test_trips')
+2012-11-30 16:20:58,307 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stops')
+2012-11-30 16:20:59,641 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'calendar_dates')
+2012-11-30 16:21:10,486 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'trips')
+2012-11-30 16:21:30,746 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'shapes')
+2012-11-30 16:49:31,242 nj_transit: 787094 elements in 1853.96068788 seconds. 388.05623264 elements per second.
+2012-11-30 16:49:31,249 nj_transit complete.
+2012-11-30 17:39:51,251 Starting nj_test
+2012-11-30 17:39:51,266 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-30 17:39:51,559 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-30 17:39:51,577 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-30 17:39:51,589 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-30 17:39:51,593 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-30 17:39:51,601 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-30 17:39:51,612 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-30 17:39:51,632 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-30 17:39:51,639 nj_test: 47 elements in 0.387051105499 seconds. 12.918190722 elements per second.
+2012-11-30 17:39:51,640 nj_test complete.
+2012-11-30 17:49:29,958 Starting nj_test
+2012-11-30 17:49:29,969 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-11-30 17:49:29,974 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-11-30 17:49:29,980 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-11-30 17:49:29,995 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-11-30 17:49:29,998 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-11-30 17:49:30,003 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-11-30 17:49:30,015 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-11-30 17:49:30,020 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-11-30 17:49:30,025 nj_test: 47 elements in 0.0664598941803 seconds. 75.2333427802 elements per second.
+2012-11-30 17:49:30,026 nj_test complete.
+2012-12-08 03:34:34,577 Starting nj_test
+2012-12-08 03:34:34,612 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-12-08 03:34:47,667 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-12-08 03:34:47,814 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-12-08 03:34:47,890 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-12-08 03:34:48,011 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-12-08 03:34:49,138 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-12-08 03:34:58,933 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-12-08 03:35:07,200 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-12-08 03:35:07,426 nj_test: 23727 elements in 32.8490440845 seconds. 0.152211430784 elements per second.
+2012-12-08 03:35:07,428 nj_test complete.
+2012-12-08 04:57:49,174 Starting nj_test
+2012-12-08 04:57:49,303 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-12-08 05:00:41,701 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-12-08 05:00:41,714 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-12-08 05:00:41,733 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'test_trips')
+2012-12-08 05:00:41,738 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-12-08 05:00:43,686 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-12-08 05:00:45,429 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-12-08 05:00:45,441 nj_test: 23498 elements in 176.266847134 seconds. 0.0283660829096 elements per second.
+2012-12-08 05:00:45,443 nj_test complete.
+2012-12-08 22:41:44,858 Starting nj_transit
+2012-12-08 22:41:44,895 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stop_times')
+2012-12-08 22:43:29,221 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'agency')
+2012-12-08 22:43:29,448 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'routes')
+2012-12-08 22:43:29,783 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'stops')
+2012-12-08 22:43:31,526 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'calendar_dates')
+2012-12-08 22:43:41,400 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-12-08 22:43:59,031 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'shapes')
+2012-12-08 23:00:05,933 nj_transit: 365346 elements in 1101.07450795 seconds. 289.768764689 elements per second.
+2012-12-08 23:00:06,030 nj_transit complete.
+2012-12-09 03:40:54,636 Starting nj_transit
+2012-12-09 03:40:54,654 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'test'), u'trips')
+2012-12-09 03:40:56,156 nj_transit: 3096 elements in 1.52039813995 seconds. 2036.30872641 elements per second.
+2012-12-09 03:40:56,161 nj_transit complete.
+2012-12-09 03:42:15,727 Starting nj_transit
+2012-12-09 03:42:15,736 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stop_times')
+2012-12-09 03:44:01,491 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'agency')
+2012-12-09 03:44:01,599 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'routes')
+2012-12-09 03:44:01,763 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'stops')
+2012-12-09 03:44:03,435 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'calendar_dates')
+2012-12-09 03:44:14,518 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'trips')
+2012-12-09 03:44:31,371 Collection(Database(MongoClient('ec2-50-17-59-106.compute-1.amazonaws.com', 27017), u'transit'), u'shapes')
+2012-12-09 04:00:12,056 nj_transit: 365346 elements in 1076.32892203 seconds. 296.430759658 elements per second.
+2012-12-09 04:00:12,267 nj_transit complete.
+2012-12-10 03:53:44,527 Starting nj_transit
+2012-12-10 03:54:31,272 Starting nj_transit
+2012-12-10 03:54:31,326 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'stop_times')
+2012-12-10 03:55:34,424 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'shapes')
+2012-12-10 04:15:05,280 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'agency')
+2012-12-10 04:15:05,466 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'calendar_dates')
+2012-12-10 04:15:19,302 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'stops')
+2012-12-10 04:15:21,416 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'trips')
+2012-12-10 04:15:41,494 Collection(Database(MongoClient('localhost', 27017), u'transit'), u'routes')
+2012-12-10 04:15:41,686 nj_transit: 365346 elements in 1270.41405392 seconds. 0.0141686090015 elements per second.
+2012-12-10 04:15:41,688 nj_transit complete.

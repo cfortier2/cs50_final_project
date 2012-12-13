@@ -1,0 +1,7 @@
+<?php
+
+
+    //render jquery-mobile
+    render("jquery_mobile.php");
+
+?>
